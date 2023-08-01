@@ -8,8 +8,8 @@ interface HTTPHeaders {
 interface RequestConfig {
     url: string;
     method?: HTTPRequestMethods;
-    body: string | null;
-    headers: HTTPHeaders
+    body?: string | null;
+    headers?: HTTPHeaders
 }
 export const useHttp = () => {
     
