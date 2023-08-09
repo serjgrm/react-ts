@@ -1,4 +1,4 @@
-export default interface IAppointment {
+export interface IAppointment {
     "id": number,
     "date": string,
     "name": string,
@@ -6,7 +6,6 @@ export default interface IAppointment {
     "phone": string,
     "canceled": boolean
 }
-
 
 
 export type ActiveAppointment = Omit<IAppointment,'canceled'>
