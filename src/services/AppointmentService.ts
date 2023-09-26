@@ -17,7 +17,6 @@ const requiredFields = ['id','date','name','service','phone','canceled'];
             throw new Error('Data doesnt have all the fields');
         }
     }
-
     const getAllActiveAppointments = async () => {
         const base = await getAllAppointments();
         const transformed: ActiveAppointment[] = base
